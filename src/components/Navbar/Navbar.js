@@ -13,13 +13,13 @@ const Navbar = () => {
                 </Link>
             </div>
             <nav>
-                <NavLink>
+                <NavLink to="/">
                     <FontAwesomeIcon icon = {faHome} size="2x" color="grey"/>
                 </NavLink>
-                <NavLink>
+                <NavLink to="/about">
                     <FontAwesomeIcon icon = {faAddressCard } size="2x" color="grey"/>
                 </NavLink>
-                <NavLink>
+                <NavLink to="/contact">
                     <FontAwesomeIcon icon = {faEnvelope} size="2x" color="grey"/>
                 </NavLink>
             </nav>
