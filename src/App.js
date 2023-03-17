@@ -1,11 +1,15 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
 import './App.scss'
 import 'animate.css';
 import Navbar from './components/Navbar/Navbar.js';
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
+        <Routes>
+          {/* <Route exact path = "/" element={<Home/>} /> */}
+        </Routes>
     </>
   );
 }
