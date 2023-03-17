@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Navbar.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome,faAddressCard, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {Link, NavLink} from "react-router-dom";
 import logo from "./logo.png"
 const Navbar = () => {
@@ -14,7 +14,13 @@ const Navbar = () => {
             </div>
             <nav>
                 <NavLink>
-                    <FontAwesomeIcon icon = {faHome} color="grey"/>
+                    <FontAwesomeIcon icon = {faHome} size="2x" color="grey"/>
+                </NavLink>
+                <NavLink>
+                    <FontAwesomeIcon icon = {faAddressCard } size="2x" color="grey"/>
+                </NavLink>
+                <NavLink>
+                    <FontAwesomeIcon icon = {faEnvelope} size="2x" color="grey"/>
                 </NavLink>
             </nav>
 
