@@ -1,87 +1,137 @@
-.navbar{
+.navbar {
     height: 100vh;
     text-align: center;
     width: 100px;
     background-color: rgb(36, 34, 34);
-    position:absolute;
+    position: absolute;
     z-index: 3;
     min-height: 500px;
 
-    .logo{
+    .logo {
         display: block;
-        position:absolute;
-        top:0;
-        padding:11px;
+        position: absolute;
+        top: 0;
+        padding: 11px;
 
-        img{
+        img {
             display: block;
-            margin:8px auto;
+            position: absolute;
+            top: 0;
+            margin: 8px auto;
             box-sizing: border-box;
-            width:80px;
-            height:auto;
-           
+            width: 80px;
+            height: auto;
+
         }
     }
-    nav{
-        position: absolute;
-       display: block;
-       text-align: center;
-       width: 100px;
-       height: 200px;
-       margin-top: -120px;
-       a{
-        display: block;
-        line-height: 80px;
-        text-decoration: none;
-        position: relative;
-        
 
-        &:hover{
+    nav {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 100px;
+        height: 200px;
+        margin-top: -130px;
+
+        a {
+            display: block;
+            line-height: 60px;
+            text-decoration: none;
+            position: relative;
+
+
+            &:hover {
+
+                svg {
+                    opacity: 0;
+                    transition: all 0.1s ease-out;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            &::after {
+                content: "";
+                font-family: 'Brush Script MT', cursive;
+                font-size: 15px;
+                position: absolute;
+                left: 0;
+                text-align: center;
+                width: 100%;
+                color: red;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &.home::after {
+                content: "HOME";
+            }
+
+            &.about::after {
+                content: "ABOUT";
+            }
+
+            &.projects::after {
+                content: "PROJECTS";
+            }
+
+            &.contact::after {
+                content: "CONTACT";
+            }
+
+            &.active {
+                svg {
+                    color: yellow;
+                }
+
+                &::after {
+                    color: yellow;
+                }
+            }
+
+
+        }
+    }
+    ul{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        bottom: 20px;
+        list-style: none;
+        width: 100%;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            padding: 6px 0;
             
             svg{
-                opacity: 0;
-                transition: all 0.1s ease-out;
-            }        
-            &::after{
-                opacity: 1;
+                color: grey;
+
             }
-        }
-       
-        &::after{
-            content: "";
-            font-family: 'Brush Script MT', cursive;
-            font-size: 15px;
-            position: absolute;
-            left: 0;
-            text-align: center;
-            width: 100%;
-            color: red;
-            opacity: 0;
-            transition: all 0.3s ease-out;
-           }
-        &.home::after{
-            content: "HOME";
-        }
-        &.about::after{
-            content: "ABOUT";
-        }
-        &.projects::after{
-            content: "PROJECTS";
-        }
-        &.contact::after{
-            content: "CONTACT";
-        }
-        &.active{
-            svg{
-                color:yellow;
+            & a.linkedin:hover svg{
+                color: rgb(15, 15, 250);
             }
-            &::after{
-                color:yellow;
+            & a.github:hover svg{
+                color: rgb(222, 220, 203);
             }
+            & a.twitter:hover svg{
+                color: rgb(15, 15, 250);
+            }
+            & a.instagram:hover svg{
+                color: rgb(208, 23, 103);
+            }
+
+            
+            
+
+
+
         }
-        
-           
-       }
-       
-}
+    }
 }
