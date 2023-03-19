@@ -55,7 +55,7 @@
             left: 0;
             text-align: center;
             width: 100%;
-            color: yellow;
+            color: red;
             opacity: 0;
             transition: all 0.3s ease-out;
            }
@@ -70,6 +70,14 @@
         }
         &.contact::after{
             content: "CONTACT";
+        }
+        &.active{
+            svg{
+                color:yellow;
+            }
+            &::after{
+                color:yellow;
+            }
         }
         
            
