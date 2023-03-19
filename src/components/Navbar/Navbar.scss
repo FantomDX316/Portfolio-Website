@@ -60,7 +60,7 @@
                 left: 0;
                 text-align: center;
                 width: 100%;
-                color: red;
+                color: rgb(234, 255, 0);
                 opacity: 0;
                 transition: all 0.3s ease-out;
             }
@@ -115,16 +115,16 @@
 
             }
             & a.linkedin:hover svg{
-                color: rgb(15, 15, 250);
+                color: rgb(255, 255, 255);
             }
             & a.github:hover svg{
-                color: rgb(222, 220, 203);
+                color: rgb(255, 255, 255);
             }
             & a.twitter:hover svg{
-                color: rgb(15, 15, 250);
+                color: rgb(255, 255, 255);
             }
             & a.instagram:hover svg{
-                color: rgb(208, 23, 103);
+                color: rgb(255, 255, 255);
             }
 
             

@@ -1,0 +1,48 @@
+.homeComponent{
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-family: "Carter One";
+    
+}
+.firstName{
+    position: relative;
+     .sLogo, h1{
+        position: absolute;
+        height: 190px;
+    }
+    img{
+        top:-30px;
+        left: 8px;
+    }
+    h1{
+        top:50px;
+        left: 120px;
+    }
+}
+.lastName{
+    position: relative;
+    .kLogo, h1{
+        position: absolute;
+        height: 190px;
+    }
+    img{
+        top:-55px;
+        left:370px;
+    }
+    h1{
+        top:30px;
+        left:500px
+    }
+}
+
+
+.homeComponent{
+    
+    h1{
+        display: inline;
+        font-size: 70px;
+        line-height: 50px;
+    }
+}
