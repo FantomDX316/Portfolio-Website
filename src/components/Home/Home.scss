@@ -7,8 +7,12 @@
 
 }
 
+.iam{
+    animation: fadeIn 1s linear;
+}
 .firstName {
     position: relative;
+    animation: fadeIn 1s linear;
 
     .sLogo,
     h1 {
@@ -34,6 +38,7 @@
 
 .lastName {
     position: relative;
+    animation: fadeIn 1s linear;
 
     .kLogo,
     h1 {
@@ -69,6 +74,7 @@
     .desc {
         position: relative;
         width: 100vw;
+        animation: fadeIn 1s linear;
 
         h2 {
             position: absolute;
@@ -84,6 +90,7 @@
     }
 
     .sImage{
+        animation: fadeIn 1s linear;
    
         img{
             position: absolute;
@@ -91,12 +98,18 @@
             transform: rotate(23deg);
             z-index:-1 ;
             opacity: 20%;
-            right: 30%;
+            right: 32%;
+            margin-top:50px;
+
+            &:hover{
+                opacity: 40%;
+            }
            
            
         }
     }
     .kImage{
+        animation: fadeIn 1s linear;
         img{
             position: absolute;
             width: 300px;
@@ -104,6 +117,30 @@
             z-index:-1 ;
             opacity: 20%;
             right: 10%;
+            margin-top: 10px;
+
+            &:hover{
+                opacity: 40%;
+
+                
+            }
         }
     }
+
+    .lightBulb{
+        animation: fadeIn  1s linear;
+        .bulb{
+            position: absolute;
+            right: 30%;
+            top: 1%;
+            left: 1000px;
+            opacity: 20%;
+
+            &:hover{
+                color: yellow;
+                opacity: 80%;
+            }
+        }
+    }
+    
 }
