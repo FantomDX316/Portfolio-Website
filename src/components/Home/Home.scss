@@ -1,48 +1,109 @@
-.homeComponent{
+.homeComponent {
     position: absolute;
-    margin-left: 160px;
+    margin-left: 120px;
     margin-top: 100px;
     color: rgb(255, 255, 255);
     font-family: "Carter One";
-    
+
 }
-.firstName{
+
+.firstName {
     position: relative;
-     .sLogo, h1{
+
+    .sLogo,
+    h1 {
         position: absolute;
         height: 190px;
     }
-    img{
-        top:-30px;
+
+    img {
+        top: -30px;
         left: 8px;
+        transition: 0.3s ease-in-out;
     }
-    h1{
-        top:50px;
-        left: 120px;
+
+    h1 {
+        top: 50px;
+        left: 125px;
+    }
+
+    & img:hover {
+        transform: scale(1.2, 1.2);
     }
 }
-.lastName{
+
+.lastName {
     position: relative;
-    .kLogo, h1{
+
+    .kLogo,
+    h1 {
         position: absolute;
         height: 190px;
     }
-    img{
-        top:-55px;
-        left:370px;
+
+    img {
+        top: -55px;
+        left: 380px;
+        transition: 0.2s ease-in-out;
     }
-    h1{
-        top:30px;
-        left:500px
+
+    h1 {
+        top: 30px;
+        left: 505px
+    }
+
+    & img:hover {
+        transform: scale(1.2, 1.2);
     }
 }
 
 
-.homeComponent{
-    
-    h1{
-        display: inline;
+.homeComponent {
+
+    h1 {
+
         font-size: 70px;
         line-height: 50px;
+    }
+
+    .desc {
+        position: relative;
+        width: 100vw;
+
+        h2 {
+            position: absolute;
+            top: 110px;
+            left: 140px;
+            opacity: 20%;
+
+            &:hover {
+                opacity: 80%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .sImage{
+   
+        img{
+            position: absolute;
+            width: 300px;
+            transform: rotate(23deg);
+            z-index:-1 ;
+            opacity: 20%;
+            right: 30%;
+           
+           
+        }
+    }
+    .kImage{
+        img{
+            position: absolute;
+            width: 300px;
+            transform: rotate(10deg);
+            z-index:-1 ;
+            opacity: 20%;
+            right: 10%;
+        }
     }
 }
