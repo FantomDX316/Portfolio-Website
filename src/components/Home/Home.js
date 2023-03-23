@@ -12,23 +12,15 @@ const Home = () => {
     return (
         <>
             <div className="homeComponent">
-                <div className="text-zone">
+                <div className="textZone">
                     <h1>
-                        Hi, <br />
-                        <div className="intro">
-                            I'm
-                            <img className="sText" src={sTextLogo} alt="sText" />
-                            aksham
-                            <img className="kText" src={kTextLogo} alt="kText" />
-                            othari
+                        Hi,<br />
+                        <div className="name">
+                            I'm <img className="sText" src={sTextLogo} alt="sText" /> aksham <img className="kText" src={kTextLogo} alt="kText" /> othari <br />
                         </div>
+
                     </h1>
                     <h2>(Frontend & Backend Developer)</h2>
-                    <div className="images">
-                        <FontAwesomeIcon className="bulb" icon={faLightbulb} size="10x"/>
-                        <img className="sImg" src={sImg} alt="sImage" />
-                        <img className="kImg" src={kImg} alt="kImage" />
-                    </div>
                 </div>
             </div>
         </>
