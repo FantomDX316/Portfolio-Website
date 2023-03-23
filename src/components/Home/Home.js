@@ -21,6 +21,11 @@ const Home = () => {
 
                     </h1>
                     <h2>(Frontend & Backend Developer)</h2>
+                    <div className="images">
+                        <FontAwesomeIcon size="10x" className="bulb" icon={faLightbulb}/>
+                        <img className="sImg" src={sImg} alt="sImage" />
+                        <img className="kImg" src={kImg} alt="kImage" />
+                    </div>
                 </div>
             </div>
         </>
