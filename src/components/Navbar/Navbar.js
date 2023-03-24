@@ -17,7 +17,9 @@ const Navbar = () => {
                     <img src={logo} alt="logo" />
                 </div>
                 <nav>
-                    <NavLink className={location.pathname === "/" ? "active home" : "home"}> <FontAwesomeIcon size="2x" icon={faHome} /> </NavLink>
+                    <NavLink className={location.pathname === "/" ? "active home" : "home"} to="/">
+                        <FontAwesomeIcon icon={faHome} size="2x" color="grey" />
+                    </NavLink>
                     <NavLink className={`${location.pathname === "/about" ? "active about" : "about"}`} to="/about">
                         <FontAwesomeIcon icon={faUser} size="2x" color="grey" />
                     </NavLink>
@@ -31,22 +33,22 @@ const Navbar = () => {
                 <ul>
                     <li>
                         <a href="">
-                            <FontAwesomeIcon size="xl" icon={faLinkedin}/>
+                            <FontAwesomeIcon size="xl" icon={faLinkedin} />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <FontAwesomeIcon size="xl" icon={faSquareGithub}/>
+                            <FontAwesomeIcon size="xl" icon={faSquareGithub} />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <FontAwesomeIcon size="xl" icon={faTwitter}/>
+                            <FontAwesomeIcon size="xl" icon={faTwitter} />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <FontAwesomeIcon size="xl" icon={faInstagram}/>
+                            <FontAwesomeIcon size="xl" icon={faInstagram} />
                         </a>
                     </li>
                 </ul>
