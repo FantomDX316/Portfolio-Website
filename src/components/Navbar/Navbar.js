@@ -1,20 +1,27 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React,{useState} from "react";
+import { NavLink , Link} from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope, faRectangleList } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faEnvelope, faRectangleList, faBars ,faXmark} from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "./Navbar.scss";
 import logo from "./logo.png"
 
 const Navbar = () => {
+    
+    const [state,setState] = useState({clicked:false});
     const location = useLocation();
+    const onClickHandler = ()=>{
+        setState({clicked:!state.clicked});
+    }
     return (
 
         <>
             <div className="navbar">
                 <div className="logo">
-                    <img src={logo} alt="logo" />
+                    <Link to="/">
+                        <img src={logo} alt="logo" />
+                    </Link>
                 </div>
                 <nav>
                     <NavLink className={location.pathname === "/" ? "active home" : "home"} to="/">
@@ -52,6 +59,10 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
+                <div className="resNav" onClick={onClickHandler}>
+                    <FontAwesomeIcon className = {state.clicked?"bars active":"bars "} icon ={faBars} size="3x"/>
+                    <FontAwesomeIcon className = {state.clicked?"xmark":"xmark active"} icon ={faXmark} size="3x"/>
+                </div>
             </div>
         </>
     );
