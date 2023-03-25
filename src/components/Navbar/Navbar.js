@@ -37,24 +37,24 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faEnvelope} size="2x" color="grey" />
                     </NavLink>
                 </nav>
-                <ul className={state.clicked?"mobileUl":"mobileUlHidden"}>
+                <ul>
                     <li>
-                        <a href="">
+                        <a target="_blank" href="https://www.linkedin.com/in/saksham-kothari-927568216/">
                             <FontAwesomeIcon size="xl" icon={faLinkedin} />
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a target="_blank" href="https://github.com/FantomDX316">
                             <FontAwesomeIcon size="xl" icon={faSquareGithub} />
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a target="_blank" href="https://twitter.com/sakshamyash">
                             <FontAwesomeIcon size="xl" icon={faTwitter} />
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a target="_blank" href="https://www.instagram.com/sakshamyash/?next=%2F">
                             <FontAwesomeIcon size="xl" icon={faInstagram} />
                         </a>
                     </li>
