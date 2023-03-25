@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { NavLink , Link} from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope, faRectangleList, faBars ,faXmark} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faAddressCard, faEnvelope, faRectangleList, faBars ,faXmark} from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "./Navbar.scss";
 import logo from "./logo.png"
@@ -23,12 +23,12 @@ const Navbar = () => {
                         <img src={logo} alt="logo" />
                     </Link>
                 </div>
-                <nav>
+                <nav className={state.clicked?"mobileNav":"mobileNavHidden"}>
                     <NavLink className={location.pathname === "/" ? "active home" : "home"} to="/">
                         <FontAwesomeIcon icon={faHome} size="2x" color="grey" />
                     </NavLink>
                     <NavLink className={`${location.pathname === "/about" ? "active about" : "about"}`} to="/about">
-                        <FontAwesomeIcon icon={faUser} size="2x" color="grey" />
+                        <FontAwesomeIcon icon={faAddressCard} size="2x" color="grey" />
                     </NavLink>
                     <NavLink className={`${location.pathname === "/projects" ? "active projects" : "projects"}`} to="/projects">
                         <FontAwesomeIcon icon={faRectangleList} size="2x" color="grey" />
@@ -37,7 +37,7 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faEnvelope} size="2x" color="grey" />
                     </NavLink>
                 </nav>
-                <ul>
+                <ul className={state.clicked?"mobileUl":"mobileUlHidden"}>
                     <li>
                         <a href="">
                             <FontAwesomeIcon size="xl" icon={faLinkedin} />
