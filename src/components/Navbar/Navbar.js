@@ -37,7 +37,7 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faEnvelope} size="2x" color="grey" />
                     </NavLink>
                 </nav>
-                <ul>
+                <ul className={state.clicked?"mobileUL":"mobileULHidden"}>
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/saksham-kothari-927568216/">
                             <FontAwesomeIcon size="xl" icon={faLinkedin} />

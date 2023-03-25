@@ -26,6 +26,7 @@
         height: 100%;
         width: 100%;
 
+
         // border: 2px solid white;
         a {
             padding: 25px;
@@ -239,6 +240,7 @@
             top: 7.1rem;
             background-color: rgb(36, 34, 34);
             transition: 0.3s ease-in-out;
+            
           
             
             a{
@@ -278,7 +280,27 @@
                 
             }
         }
-        
+        .mobileUL{
+            position: absolute;
+            display: inline;
+            flex-direction: column;
+            width: 65vw;
+            top: 80vh;
+            right:-40px;
+            bottom: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .mobileULHidden{
+            position: absolute;
+            display: inline;
+            flex-direction: column;
+            width: 65vw;
+            top: 80vh;
+            right:-1000px;
+            bottom: 0;
+            transition: ease-in-out;
+
+        }
         
 
 
