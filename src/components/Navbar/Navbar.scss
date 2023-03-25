@@ -1,5 +1,5 @@
 .navbar {
-    overflow: hidden;
+    
     position: absolute;
     width: 100vw;
     height: 7rem;
@@ -174,7 +174,7 @@
         .resNav {
             display: block;
 
-            .active {
+            .notVisible {
                 display: none;
             }
         }

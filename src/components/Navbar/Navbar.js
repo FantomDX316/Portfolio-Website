@@ -60,8 +60,8 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="resNav" onClick={onClickHandler}>
-                    <FontAwesomeIcon className = {state.clicked?"bars active":"bars "} icon ={faBars} size="3x"/>
-                    <FontAwesomeIcon className = {state.clicked?"xmark":"xmark active"} icon ={faXmark} size="3x"/>
+                    <FontAwesomeIcon className = {state.clicked?"bars notVisible":"bars "} icon ={faBars} size="3x"/>
+                    <FontAwesomeIcon className = {state.clicked?"xmark":"xmark notVisible"} icon ={faXmark} size="3x"/>
                 </div>
             </div>
         </>
