@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faAddressCard, faEnvelope, faRectangleList, faBars ,faXmark} from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "./Navbar.scss";
-import logo from "./logo.png"
+import logo from "./logo.png";
 
 const Navbar = () => {
     
