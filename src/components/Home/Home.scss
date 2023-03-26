@@ -5,36 +5,62 @@
     width: 100vw;
     color: white;
     border: 2px solid rgb(49, 48, 48);
+    animation: fadeIn 1.7s forwards;
 
     h1 {
         position: relative;
         padding: 3vw 0 0 3vw;
-        font-size: 3vw;
+        font-size: 4vw;
+
+        span {
+            display: inline-block;
+            padding: 2px;
+
+            &.jelloLetter:hover {
+                cursor: pointer;
+                color: yellow;
+                animation: tada 1s linear;
+            }
+        }
 
         .name {
             position: relative;
-            padding-left: 3vw;
         }
 
         img {
             position: relative;
-            width: 10vw;
+            width: 7vw;
             top: -2vw;
-            left: 2.5vw;
+            left: 0.8vw;
             transition: 0.3s ease-in-out;
 
+
             &:hover {
-                transform: scale(1.2);
+                animation: rubberBand 1s linear;
+                cursor: pointer;
+
             }
 
         }
     }
 
     h2 {
-        padding-left: 12vw;
+        padding-left: 10vw;
         font-size: 2vw;
-        opacity: 30%;
+        opacity: 40%;
         transition: 0.2s ease-in-out;
+        display: inline;
+
+        span {
+            display: inline-block;
+            padding: 1.5px;
+
+            &.jelloLetter:hover {
+                cursor: pointer;
+                color: pink;
+                animation: tada 1s linear;
+            }
+        }
 
 
         &:hover {
@@ -43,17 +69,40 @@
         }
     }
 
+    .contactMe {
+        display: inline;
+        border: 2px solid yellow;
+        position: absolute;
+        box-shadow: 20%;
+        font-size: 2vw;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border-radius: 8px;
+        margin-left: -28vw;
+        padding: 4px;
+        background-color: rgb(21, 21, 63);
+        top: 25vw;
+        animation: bounce 1s 0.5s linear;
+
+        &:hover {
+            opacity: 100%;
+            color: yellow;
+            background-color: black;
+
+        }
+    }
+
     .lightBulb {
         position: absolute;
         top: 10vh;
-        right: 25vw;
+        right: 20vw;
         transform: rotateZ(5deg);
         opacity: 30%;
         font-size: 1vw;
         transition: 0.1s ease-in-out;
 
         &:hover {
-            opacity: 80%;
+            opacity: 100%;
             color: yellow;
             cursor: pointer;
 
@@ -62,7 +111,7 @@
 
     .images {
         position: absolute;
-        right: 12vw;
+        right: 6vw;
         top: 30vh;
 
         img {
@@ -97,36 +146,39 @@
 
 @media screen and (max-width:980px) {
 
-    .homeComponent{
-        h1{
+    .homeComponent {
+        h1 {
             left: 42vw;
             font-size: 4vw;
             transition: 0.3s ease-in-out;
 
 
-            .name{
+            .name {
                 margin-top: 10px;
                 left: -25vw;
-            transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
 
             }
         }
-        h2{
+
+        h2 {
             font-size: 2.5vw;
             margin-left: 18vw;
             transition: 0.3s ease-in-out;
-           
+
             display: inline;
 
         }
-        .images{
+
+        .images {
             display: inline;
             top: 37vh;
             left: 30vw;
             transition: 0.3s ease-in-out;
 
         }
-        .lightBulb{
+
+        .lightBulb {
             top: 20vh;
             font-size: 1.5vw;
             right: 10vw;
@@ -134,9 +186,9 @@
     }
 }
 
-@media screen and (max-width:730px){
-    .homeComponent{
-        .images{
+@media screen and (max-width:730px) {
+    .homeComponent {
+        .images {
             top: 31vh;
         }
     }
