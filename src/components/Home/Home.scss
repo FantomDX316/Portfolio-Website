@@ -4,6 +4,7 @@
     height: 100vh;
     width: 100vw;
     color: white;
+    border: 2px solid rgb(49, 48, 48);
 
     h1 {
         position: relative;
@@ -44,12 +45,12 @@
 
     .lightBulb {
         position: absolute;
-        top: 5vh;
+        top: 10vh;
         right: 25vw;
         transform: rotateZ(5deg);
         opacity: 30%;
         font-size: 1vw;
-        transition: 0.2s ease-in-out;
+        transition: 0.1s ease-in-out;
 
         &:hover {
             opacity: 80%;
@@ -68,7 +69,7 @@
 
             width: 18vw;
             opacity: 30%;
-            transition: 0.2s ease-in-out;
+            transition: 0.1s ease-in-out;
 
         }
 
@@ -94,4 +95,49 @@
     }
 }
 
-@media screen and (max-width:980px) {}
+@media screen and (max-width:980px) {
+
+    .homeComponent{
+        h1{
+            left: 42vw;
+            font-size: 4vw;
+            transition: 0.3s ease-in-out;
+
+
+            .name{
+                margin-top: 10px;
+                left: -25vw;
+            transition: 0.3s ease-in-out;
+
+            }
+        }
+        h2{
+            font-size: 2.5vw;
+            margin-left: 18vw;
+            transition: 0.3s ease-in-out;
+           
+            display: inline;
+
+        }
+        .images{
+            display: inline;
+            top: 37vh;
+            left: 30vw;
+            transition: 0.3s ease-in-out;
+
+        }
+        .lightBulb{
+            top: 20vh;
+            font-size: 1.5vw;
+            right: 10vw;
+        }
+    }
+}
+
+@media screen and (max-width:730px){
+    .homeComponent{
+        .images{
+            top: 31vh;
+        }
+    }
+}
