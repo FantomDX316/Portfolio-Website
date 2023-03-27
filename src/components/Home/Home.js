@@ -15,6 +15,7 @@ const im = ['I', '\'', 'm'];
 const firstName = ['a', 'k', 's', 'h', 'a', 'm'];
 const lastName = ['o', 't', 'h', 'a', 'r', 'i'];
 const dev = ['(', 'F', 'r', 'o', 'n', 't', 'e', 'n', 'd', '  ', '&', ' ', 'B', 'a', 'c', 'k', 'e', 'n', 'd', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', ')'];
+const contact = ["C",'O','N','T','A','C','T',' ','M','E'];
 
 class Home extends Component {
     constructor() {
@@ -37,7 +38,7 @@ class Home extends Component {
                     <h2>
                         <AnimatedLetters strArray={dev} animatedLetterClass="jelloLetter" />
                     </h2>
-                    <Link className="contactMe" to="./contact">CONTACT ME</Link>
+                    <Link className="contactMe" to="./contact"><AnimatedLetters strArray={contact} animatedLetterClass="jelloLetter" /></Link>
                     <div className="lightBulb">
                         <FontAwesomeIcon icon={faLightbulb} size="10x" />
                     </div>

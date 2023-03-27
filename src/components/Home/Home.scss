@@ -11,10 +11,15 @@
         position: relative;
         padding: 3vw 0 0 3vw;
         font-size: 4vw;
+        
+
+
 
         span {
             display: inline-block;
             padding: 2px;
+            
+            
 
             &.jelloLetter:hover {
                 cursor: pointer;
@@ -58,7 +63,7 @@
             &.jelloLetter:hover {
                 cursor: pointer;
                 color: pink;
-                animation: tada 1s linear;
+                animation: wobble 1s linear;
             }
         }
 
@@ -83,11 +88,23 @@
         background-color: rgb(21, 21, 63);
         top: 25vw;
         animation: bounce 1s 0.5s linear;
+        span {
+            display: inline-block;
+            padding: 2px;
+
+            &.jelloLetter:hover {
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+                animation: jello 1s linear;
+            }
+        }
 
         &:hover {
             opacity: 100%;
             color: yellow;
             background-color: black;
+            transform: scale(1.1);
+            transition: 0.2s ease-in-out;
 
         }
     }
