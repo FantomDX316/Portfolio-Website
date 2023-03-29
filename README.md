@@ -1,4 +1,4 @@
 # Personal Portfolio Website
 
-## Still in development --> Fork and checkout the changes
+## Still in development 
 ## Tech Stack - Html, SASS, JS, React
