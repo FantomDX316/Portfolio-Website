@@ -185,7 +185,7 @@
 
         h2 {
             font-size: 3vw;
-            margin-left: 11vw;
+            margin-left: 12vw;
             transition: 0.3s ease-in-out;
 
             display: inline-block;
@@ -198,28 +198,34 @@
             left: 30vw;
             transition: 0.3s ease-in-out;
 
+
         }
         .contactMe{
             margin-top: 5vh;
             margin-left: 0;
-            left: 38vw;
+            left: 36vw;
             transition: 0.3s ease-in-out;
+            font-size: 3.2vw;
+            
 
         }
 
         .lightBulb {
-            top: 20vh;
+            top: 40vh;
             font-size: 1.5vw;
-            right: 10vw;
+            right: 20vw;
+
         }
     }
 }
 
-// @media screen and (max-width:730px) {
-//     .homeComponent {
-//         overflow-y: hidden;
-//         .images {
-//             top: 31vh;
-//         }
-//     }
-// }
+@media screen and (max-width:750px) {
+    .homeComponent {
+        .images {
+            top: 30vh;
+        }
+        .lightBulb{
+            top: 32vh;
+        }
+    }
+}

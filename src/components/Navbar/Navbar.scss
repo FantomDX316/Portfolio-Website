@@ -6,7 +6,7 @@
     background-color: rgb(36, 34, 34);
     box-shadow: 2px 5px;
     z-index: 3;
-    // overflow: hidden;
+    overflow: hidden;
 
     .logo {
         position: relative;
@@ -26,6 +26,7 @@
         display: flex;
         height: 100%;
         width: 100%;
+
 
 
         // border: 2px solid white;
@@ -167,7 +168,7 @@
 
 @media screen and (max-width:980px) {
     .navbar {
-
+            overflow: visible;
         nav {
             display: none;
         }
@@ -183,6 +184,7 @@
                 display: none;
             }
         }
+        
         .mobileNav{
             position: absolute;
             display: flex;
