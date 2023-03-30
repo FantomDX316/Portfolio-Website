@@ -1,11 +1,15 @@
+
 .homeComponent {
     position: absolute;
     margin-top: 7rem;
     height: 100vh;
+    min-height: 500px;
     width: 100vw;
     color: white;
     border: 2px solid rgb(49, 48, 48);
     animation: fadeIn 1.7s forwards;
+    overflow: hidden;
+
 
     h1 {
         position: relative;
@@ -111,7 +115,7 @@
 
     .lightBulb {
         position: absolute;
-        top: 10vh;
+        top: 9vh;
         right: 20vw;
         transform: rotateZ(5deg);
         opacity: 30%;
@@ -166,25 +170,25 @@
     .homeComponent {
         
         h1 {
-            left: 42vw;
-            font-size: 4vw;
+            left: 40vw;
+            font-size: 6vw;
             transition: 0.3s ease-in-out;
 
 
             .name {
                 margin-top: 10px;
-                left: -25vw;
+                left: -28vw;
                 transition: 0.3s ease-in-out;
 
             }
         }
 
         h2 {
-            font-size: 2.5vw;
-            margin-left: 18vw;
+            font-size: 3vw;
+            margin-left: 11vw;
             transition: 0.3s ease-in-out;
 
-            display: inline;
+            display: inline-block;
 
         }
 
@@ -192,6 +196,13 @@
             display: inline;
             top: 37vh;
             left: 30vw;
+            transition: 0.3s ease-in-out;
+
+        }
+        .contactMe{
+            margin-top: 5vh;
+            margin-left: 0;
+            left: 38vw;
             transition: 0.3s ease-in-out;
 
         }

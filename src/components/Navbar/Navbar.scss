@@ -6,6 +6,7 @@
     background-color: rgb(36, 34, 34);
     box-shadow: 2px 5px;
     z-index: 3;
+    // overflow: hidden;
 
     .logo {
         position: relative;
@@ -33,6 +34,7 @@
             // border: 2px solid yellow;
             text-decoration: none;
             position: absolute;
+            overflow: hidden;
 
 
             svg {
@@ -124,6 +126,7 @@
         justify-content: flex-end;
         position: absolute;
         right: 1vw;
+        
 
         li {
             top: 2.5rem;
@@ -164,7 +167,6 @@
 
 @media screen and (max-width:980px) {
     .navbar {
- 
 
         nav {
             display: none;
@@ -191,6 +193,7 @@
             top: 7.1rem;
             background-color: rgb(36, 34, 34);
             transition: 0.3s ease-in-out;
+            overflow: hidden;
 
           
             
@@ -231,77 +234,19 @@
                 
             }
         }
-        .mobileNavHidden{
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            width: 65vw;
-            height: 100vh;
-            right: -1000px;
-            top: 7.1rem;
-            background-color: rgb(36, 34, 34);
-            transition: 0.3s ease-in-out;
-            
-          
-            
-            a{
-                position: relative;
-                width: 100%;
-              
-                
-                
-                &.home{
-                    left: 10%;
-                }
-                &.about{
-                    left: 10%;
-                }
-                &.projects{
-                    left: 10%;
-                }
-                &.contact{
-                    left: 10%;
-                }
-                &:hover svg{
-                    opacity: 1;
-                }
-                &:hover{
-                    transform: scale(1.1);
-                }
-
-                &::after{
-                    opacity: 1;
-                    position: relative;
-                    left: 10%;
-                    color: white;
-                }
-                &.active::after{
-                    color: yellow;
-                }
-                
-            }
-        }
+        
         .mobileUL{
             position: absolute;
-            display: inline;
+            display: inline-block;
             flex-direction: column;
             width: 65vw;
-            top: 80vh;
-            right:-40px;
+            top: 90vh;
             bottom: 0;
+            padding-left: 12vw;
             transition: 0.3s ease-in-out;
-        }
-        .mobileULHidden{
-            position: absolute;
-            display: inline;
-            flex-direction: column;
-            width: 65vw;
-            top: 80vh;
-            right:-1000px;
-            bottom: 0;
-            transition: ease-in-out;
 
         }
+        
         
 
 

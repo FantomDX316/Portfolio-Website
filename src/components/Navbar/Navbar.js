@@ -23,7 +23,7 @@ const Navbar = () => {
                         <img src={logo} alt="logo" />
                     </Link>
                 </div>
-                <nav className={state.clicked?"mobileNav":"mobileNavHidden"}>
+                <nav className={state.clicked?"mobileNav":""}>
                     <NavLink className={location.pathname === "/" ? "active home" : "home"} to="/">
                         <FontAwesomeIcon icon={faHome} size="2x" color="grey" />
                     </NavLink>
@@ -37,24 +37,24 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faEnvelope} size="2x" color="grey" />
                     </NavLink>
                 </nav>
-                <ul className={state.clicked?"mobileUL":"mobileULHidden"}>
+                <ul className={state.clicked?"mobileUL":""}>
                     <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/saksham-kothari-927568216/">
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/saksham-kothari-927568216/">
                             <FontAwesomeIcon size="xl" icon={faLinkedin} />
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://github.com/FantomDX316">
+                        <a target="_blank" rel="noreferrer" href="https://github.com/FantomDX316">
                             <FontAwesomeIcon size="xl" icon={faSquareGithub} />
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://twitter.com/sakshamyash">
+                        <a target="_blank" rel="noreferrer" href="https://twitter.com/sakshamyash">
                             <FontAwesomeIcon size="xl" icon={faTwitter} />
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.instagram.com/sakshamyash/?next=%2F">
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/sakshamyash/?next=%2F">
                             <FontAwesomeIcon size="xl" icon={faInstagram} />
                         </a>
                     </li>
