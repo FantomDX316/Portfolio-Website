@@ -171,15 +171,18 @@
         
         h1 {
             top: 20vh;
-            left: 40vw;
+            left: 42vw;
             font-size: 6vw;
             transition: 0.3s ease-in-out;
 
 
             .name {
                 margin-top: 10px;
-                left: -29vw;
+                left: -34vw;
                 transition: 0.3s ease-in-out;
+                img{
+                width: 10vw;
+                }
 
             }
         }
@@ -202,7 +205,7 @@
         .contactMe{
             margin-top: 30vh;
             margin-left: 0;
-            left: 35vw;
+            left: 36vw;
             transition: 0.3s ease-in-out;
             font-size: 3.2vw;
             
@@ -216,3 +219,34 @@
     }
 }
 
+@media screen and (max-width:600px){
+    .homeComponent{
+        h1{
+        font-size: 2.5rem;
+            left: 0;
+            .name{
+            left:0;
+            img{
+                width: 60px;
+            }
+            }
+        }
+        h2{
+            margin-left: 0;
+            margin-top: 200px;
+            padding-left: 20px;
+            font-size: 1.5rem;
+            display: block;
+        }
+        .contactMe{
+        font-size: 25px;
+        position: relative;
+        left: 0;
+        display: inline-block;
+        margin-left: 25px;
+        margin-top: 0;
+        
+
+        }
+    }
+}
