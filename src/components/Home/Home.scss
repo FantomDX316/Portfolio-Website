@@ -170,6 +170,7 @@
     .homeComponent {
         
         h1 {
+            top: 20vh;
             left: 40vw;
             font-size: 6vw;
             transition: 0.3s ease-in-out;
@@ -177,33 +178,31 @@
 
             .name {
                 margin-top: 10px;
-                left: -28vw;
+                left: -29vw;
                 transition: 0.3s ease-in-out;
 
             }
         }
 
         h2 {
+            
             font-size: 3vw;
             margin-left: 12vw;
             transition: 0.3s ease-in-out;
-
+            margin-top: 20vh;
             display: inline-block;
 
         }
 
         .images {
-            display: inline;
-            top: 37vh;
-            left: 30vw;
-            transition: 0.3s ease-in-out;
+           display: none;
 
 
         }
         .contactMe{
-            margin-top: 5vh;
+            margin-top: 30vh;
             margin-left: 0;
-            left: 36vw;
+            left: 35vw;
             transition: 0.3s ease-in-out;
             font-size: 3.2vw;
             
@@ -211,21 +210,9 @@
         }
 
         .lightBulb {
-            top: 40vh;
-            font-size: 1.5vw;
-            right: 20vw;
+            display: none;
 
         }
     }
 }
 
-@media screen and (max-width:750px) {
-    .homeComponent {
-        .images {
-            top: 30vh;
-        }
-        .lightBulb{
-            top: 32vh;
-        }
-    }
-}
