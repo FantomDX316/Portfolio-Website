@@ -115,7 +115,7 @@
         right: 20vw;
         transform: rotateZ(5deg);
         opacity: 30%;
-        font-size: 1vw;
+        font-size: clamp(0.9rem,1.1vw,5rem);
         transition: 0.1s ease-in-out;
 
         &:hover {
@@ -164,6 +164,7 @@
 @media screen and (max-width:980px) {
 
     .homeComponent {
+        
         h1 {
             left: 42vw;
             font-size: 4vw;
@@ -203,10 +204,11 @@
     }
 }
 
-@media screen and (max-width:730px) {
-    .homeComponent {
-        .images {
-            top: 31vh;
-        }
-    }
-}
+// @media screen and (max-width:730px) {
+//     .homeComponent {
+//         overflow-y: hidden;
+//         .images {
+//             top: 31vh;
+//         }
+//     }
+// }
